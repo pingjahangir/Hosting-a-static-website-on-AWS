@@ -33,11 +33,11 @@ https://d35zaqpdef03k4.cloudfront.net/
 
 ## 📁 Project Structure
 
-.
-├── index.html
-├── style.css
-├── images.jpeg
-
+1. [index.html](index.html)
+2. [style.css](style.css)
+3. [images.jpeg](images.jpeg)
+4. [policy](policy)
+- update.
 
 ## 🚀 How to Deploy
 1. Create S3 bucket
@@ -57,5 +57,5 @@ CloudFront caches content at edge locations. When updates are made to the websit
 
 ---
 
-## 🙌 Author
+## Author
 pingjahangir
