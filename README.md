@@ -46,6 +46,30 @@ https://d35zaqpdef03k4.cloudfront.net/
 5. Update bucket policy
 6. Access via CloudFront URL
 
+## 🛠️ Steps to Follow
+1. Create a simple website
+- [index.html](index.html)
+- [style.css](style.css)
+2. S3 Setup
+- Create S3 bucket
+- Enable static website hosting
+- Upload files
+3. Make Website Public
+- Do it by making a bucket policy [policy](policy/public_bucket.txt)
+4. Access the *LIVE* Website 
+* http://your-bucket-name.s3-website-region.amazonaws.com (your link must be looking like this)
+* make sure to turn OFF the Block Public Access setting.
+5. Add CloudFront
+* Create CloudFront distribution
+* Set origin = S3 bucket
+* Enable caching
+* To make the S3 secure again from public to private turn back ON Block Public Access setting and Change the public policy by this [policy](policy/private_bucket.txt)
+* this enables the [OAC](images.jpeg/CloudFront_origin.jpg) (Origin Access Control)
+* You will end-up with a secure CDN CloudFront URL like : https://dxxxxx.cloudfront.net to access your website.
+
+
+**Now you have put a global Caching layer infront of S3 and turned it into a secure production grade delivery system**
+
 ## 🔄 Cache Invalidation
 CloudFront caches content at edge locations. When updates are made to the website, cache invalidation may be required to reflect changes immediately.
 
