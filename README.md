@@ -3,7 +3,7 @@
 ## 📌 Project Overview
 This project demonstrates how to host a static website using AWS with a secure production-style architecture.
 
-## 🏗️ [Architecture](architecture.jpg)
+## 🏗️ ![Architecture](images.jpeg/architecture.jpg)
 user --> CloudFront --> S3
 
 ## 🔧 Services Used
